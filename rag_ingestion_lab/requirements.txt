@@ -1,0 +1,9 @@
+openai>=2.0,<4
+SQLAlchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+opensearch-py>=2.8,<4
+PyMuPDF>=1.24,<2
+pydantic>=2.10,<3
+python-dotenv>=1,<2
+tiktoken>=0.9,<1
+pytest>=8,<10
