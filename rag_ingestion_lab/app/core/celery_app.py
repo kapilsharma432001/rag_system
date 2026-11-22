@@ -1,11 +1,11 @@
 from celery import Celery
-from app.config import settings
+from app.core.config import settings
 
 celery_app = Celery(
     "rag_ingestion",
     broker=settings.redis_url,
     backend=settings.celery_result_backend,
-    include=["app.tasks"],
+    include=["app.workers.tasks.health"],
 )
 
 celery_app.conf.update(
